@@ -1,0 +1,88 @@
+/* 
+>>>>>>>>>>>>> BASE STYLES <<<<<<<<<<<<<< */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* 
+>>>>>>>>>>>>> CONTAINER & ROW STYLES <<<<<<<<<<<<<< */
+
+.page-wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.f-width {
+    padding: 100px 0;
+}
+
+.column-row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* 
+>>>>>>>>>>>>> COLUMN STYLES <<<<<<<<<<<<<< */
+
+.col {
+    float: left;
+    padding: 10px;
+}
+
+.p-r {
+    margin-right: 5%;
+}
+
+.p-l {
+    margin-left: 5%;
+}
+
+.c-2 {
+    width: 20%;
+}
+
+.c-3 {
+    width: 30%;
+}
+
+.c-4 {
+    width: 45%;
+}
+
+.c-5 {
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+>>>>>>>>>>>>> CLEARFIX <<<<<<<<<<<<<< */
+.clear:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/* 
+>>>>>>>>>>>>> TEST BORDER <<<<<<<<<<<<<< */
+/*.test-border {
+    border: 1px solid red;
+}*/
+
