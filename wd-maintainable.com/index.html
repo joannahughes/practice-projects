@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introduction | Maintainable CSS</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 650px)">
+
+</head>
+<body>
+    <header class="main-header clear">
+        <div class="row">
+            <div class="left">
+               <p class="img-container"><img src="assets/logo.png" alt="site logo" class="logo"></p>
+            </div>
+            <div class="right">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chapters</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sub-nav clear">
+        <div class="row">
+            <p><a href="#">Next: Semantics &raquo;</a></p>
+        </div>
+    </div>
+    <div class="wrapper row clear">
+        <div class="primary-content">
+            <h1>Introduction</h1>
+            <p><span class="em">MaintainableCSS</span> is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.<br><br> In practical terms, this means that as a developer I want to create new features, or edit existing features without having to concern myself with overriding styles I don’t want applied, or worse that the code I write causes regression elsewhere.</p>
+            <h2>There is nothing to download</h2>
+            <p><span class="em">MaintainableCSS</span> is not something you can download. It’s a set of principles, guides and conventions that help you write CSS for large or small scale websites.</p>
+            <h2>What does maintainable even mean</h2>
+            <p>Having maintainable code means that I can edit a module and its styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to write code that provides peace of mind knowing that my code is encapsulated.</p>
+            <h2>What does scalable even mean?</h2>
+            <p>This means, that as the CSS codebase increases in size, that maintaining code (see previous point) isn’t any harder. If you have ever inherited a large CSS codebase, and been worried about editing existing styles, you can sympathise with this.</p>
+            <h2>What does modular even mean?</h2>
+            <p>A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art to be modules, all coming together to create a useable room.<br><br>If you take one of the units away, the rest still works just fine. I don’t need the TV to be able to sit on the sofa etc. In a website, the header, footer, product list, article etc can all be considered modules.</p>
+            <h2>Who is this for?</h2>
+            <p>If you have ever experienced pain in maintaining CSS, this book can help you avoid common problems. Whether you’re in a team of 1 or 100, I think you will find useful advice in this book. Even more so if your site is constantly evolving.</p>
+            <h2>How hard is this to learn?</h2>
+            <p>I would say it’s very easy to learn. You can read the entire book in under 20 minutes and apply the rules in minutes. Let me know if I am wrong though :).</p>
+            <button class="share-button"><a href="#">share on twitter</a></button>
+        </div>
+    </div>
+    <div class="sub-nav">
+        <div class="row">
+            <p><a href="#">Next: Semantics &raquo;</a></p>
+        </div>
+    </div>
+    <div class="secondary-content wrapper">
+        <div class="row">
+            <h2>Chapters</h2>
+            <ol class="chapter-list">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Semantics</a></li>
+                <li><a href="#">Reuse</a></li>
+                <li><a href="#">IDs</a></li>
+                <li><a href="#">Conventions</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">State</a></li>
+                <li><a href="#">Modifiers</a></li>
+                <li><a href="#">Versioning</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Organization</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="form-outer wrapper">
+        <div class="row">
+            <h2>Want to learn even more?</h2>
+            <p>Enter your email and I will send you new chapters as I release them.</p>
+            <form class="form-body">
+                <input placeholder="Your email address..." type="email" name="EMAIL" id="email-form" class="form-field-1">
+                <input type="submit" value="Yes I want Updates!" name="SUBSCRIBE" class="submit-button">
+            </form>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <p>Create by <a href="#">Adam Silver</a>, a UX engineer from London. Making things simple and human.</p>
+    </footer>
+</body>
+</html>

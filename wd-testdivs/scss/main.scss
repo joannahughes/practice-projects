@@ -1,0 +1,28 @@
+/* CSS Document */
+$header-color: #555;
+$p-color: #999;
+
+$header-font: serif;
+$p-font: sans-serif;
+
+.inner-container {
+    width: 75%;
+    margin: 0 auto;
+
+h1 {
+    font-family: $header-font;
+    font-size: 3rem;
+    color: $header-color;
+}
+
+p {
+    font-family: $p-font;
+    font-size: 1.125rem;
+    color: $p-color;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid black;
+}
+}

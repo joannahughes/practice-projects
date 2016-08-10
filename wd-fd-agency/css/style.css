@@ -1,0 +1,48 @@
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.fullWidth {
+    max-width: none;
+}
+
+.callout {
+    border: none;
+}
+
+.callout.large {
+    padding: 1rem;
+}
+
+.stat {
+    font-size: 2.5rem;
+}
+
+.thumbnail {
+    border: solid 4px #fefefe;
+    box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+   /* transition: box-shadow 200ms ease-out;*/
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.thumbnail:hover, .thumbnail:focus {
+     box-shadow: none;
+}
+
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .ourStats ul li {
+        text-align: center;
+}
+
+.callout.large {
+    padding: 3rem;
+}
+}

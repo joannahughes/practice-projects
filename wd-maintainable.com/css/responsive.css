@@ -1,0 +1,51 @@
+
+@media screen and (max-width: 650px) {
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p,
+.chapter-list li {
+    font-size: 18px;
+}
+
+.left,
+.right {
+    float: none;
+}
+
+.nav-links {
+    padding: 15px 0;
+}
+
+.img-container,
+.nav-links {
+    text-align: center;
+}
+
+.sub-nav p {
+    text-align: center;
+}
+
+.primary-content {
+    width: 100%;
+}
+
+.form-field-1,
+.submit-button {
+    width: 100%;
+}
+
+.form-field-1 {
+    margin-bottom: 10px;
+}
+
+
+
+}
+
