@@ -1,0 +1,17 @@
+@media screen and (max-width: 650px) {
+
+    .hide-for-small {
+        display: none;
+    }
+
+    button {
+    display: block;
+}
+
+    .intro-content p {
+        color: #2646FF;
+    }
+
+}
+
+
