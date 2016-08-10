@@ -1,0 +1,219 @@
+/* CSS Document */
+
+/* 
+>>>>>>>>>>>>> TEXT STYLES <<<<<<<<<<<<<< */
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-family: 'Arial Narrow' sans-serif;
+    }
+    
+h1,
+h5 {
+    text-transform: uppercase;
+    }
+   
+    
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+.subheader {
+    color: #000;
+    font-size:0.938rem;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    }
+    
+ .subtype {
+     color: #333;
+     font-size:0.750rem;
+     }
+    
+.text-snippet {
+    color: #000;
+    font-size: 0.906rem;
+    font-style: italic;
+    letter-spacing: normal;
+    }
+    
+
+  
+
+/* 
+>>>>>>>>>>>>> LINK STYLES <<<<<<<<<<<<<< */
+
+a {
+    color: #333;
+    text-decoration: underline;
+    }
+    
+a:hover {
+    color: #000;
+    }
+    
+
+
+
+/* 
+>>>>>>>>>>>>> NAV AND FOOTER STYLES <<<<<<<<<<<<<< */
+
+.top-bar,
+.top-bar ul {
+    background-color: transparent;
+    }
+
+.main-nav {
+    border-bottom: 5px solid #fffa00;
+    margin-bottom: 2rem;
+    }
+
+.logo {
+    width: 60%;
+    }
+    
+.main-footer {
+    background-color: #fffa00;
+    }
+
+
+
+
+/* 
+>>>>>>>>>>>>> SITE INTRO STYLES <<<<<<<<<<<<<< */
+
+ .site-intro-list ul li {
+     margin-bottom: 2.5rem;
+     width: 75%;
+     }
+     
+ .site-intro-list h5 {
+     margin-bottom: 1rem;
+     }
+     
+ .site-intro-list h6 {
+     color: #333;
+     font-weight: bold;
+     }
+     
+ .site-intro-list ul li p:nth-child(3) {
+     font-size: 0.906rem;
+     }
+    
+/* 
+>>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<< */
+
+.project-grid {
+    margin-bottom: 2rem;
+    }
+    
+.project-grid p {
+     text-align: center;
+     }
+
+hr {
+    max-width: 75rem;
+    height: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+    margin: 1.25rem auto;
+    clear: both;
+}
+
+
+
+
+/* 
+>>>>>>>>>>>>> CUSTOM MEDIA QUERIES <<<<<<<<<<<<<< */
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    
+    .column,
+    .columns {
+        padding-left: 2rem;
+        }
+        
+    .top-bar-right {
+        margin-top: 1.563rem;
+        }
+        
+    .top-bar-left {
+        margin-top: 1rem;
+        }
+        
+    .g-r {
+        margin-bottom: 1rem;
+        padding: 1.5rem 0;
+        }
+    
+    hr {
+        margin: 1.25rem auto 3rem auto;
+        }
+    
+    .subheader {
+        margin-bottom: 0.5rem;
+        }
+    
+    .project-grid p {
+        text-align: initial; 
+        }
+        
+/* 
+>>>> LINK STYLES <<<<< */
+    
+    a {
+        text-decoration: none;
+        }
+        
+    .subheader a:hover {
+        color: #333;
+        font-weight: bold;
+        }
+        
+    .text-snippet a:hover {
+        color: #333;
+        font-weight: normal;
+    }
+
+    .main-nav-links a:hover,
+    .main-footer-links a:hover,
+    .cta a:hover,
+    .site-intro-list a:hover {
+        background-color: #ccffcc;
+        color: #000;
+        font-weight: bold;
+        }
+    
+    .grid-hover:hover {
+        background-color: #ccffcc;
+        }    
+        
+    .site-intro-list a {
+        font-weight: bold;
+        }
+    
+    }
+    
+    
+    
+/*/* Small only 
+@media screen and (max-width: 39.9375em) {
+   
+        
+     
+    }*/
