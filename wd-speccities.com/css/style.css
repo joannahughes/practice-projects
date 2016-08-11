@@ -1,13 +1,7 @@
 /* CSS Document */
 
 /* 
->>>>>>>>>>>>> TEXT STYLES <<<<<<<<<<<<<< */
-
-p,
-a,
-li {
-    font-size: 1rem;
-    }
+>>>>>>>>>>>>>>>>>>>>>>>>>> TEXT STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 p,
 li,
@@ -43,7 +37,8 @@ li {
     margin-bottom: 0.5rem;
     }
     
- .subtype {
+ .subtype,
+ .subtype a {
      color: #333;
      font-size:0.750rem;
      }
@@ -59,7 +54,7 @@ li {
   
 
 /* 
->>>>>>>>>>>>> LINK STYLES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>>  LINK STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 a {
     color: #333;
@@ -74,7 +69,7 @@ a:hover {
 
 
 /* 
->>>>>>>>>>>>> NAV AND FOOTER STYLES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>> NAV AND FOOTER STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .top-bar,
 .top-bar ul {
@@ -93,6 +88,7 @@ a:hover {
 .main-footer {
     background-color: #fffa00;
     min-height: 137px;
+    margin-top: 2rem;
     }
 
 .sticky-footer-wrap {
@@ -100,8 +96,10 @@ a:hover {
     }
 
 
+
+
 /* 
->>>>>>>>>>>>> SIDEBAR STYLES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>> SIDEBAR STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
  .sidebar.intro-list ul li {
      margin-bottom: 2.5rem;
@@ -122,10 +120,9 @@ a:hover {
     
     
     
-    
-    
+       
 /* 
->>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .project-grid {
     margin-bottom: 2rem;
@@ -134,8 +131,6 @@ a:hover {
 .project-grid p {
      text-align: center;
      }
-     
-
 
 hr {
     max-width: 75rem;
@@ -146,20 +141,28 @@ hr {
     border-left: 0;
     margin: 1.25rem auto;
     clear: both;
-}
+    }
 
 
 
 /* 
->>>>>>>>>>>>> CUSTOM MEDIA QUERIES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>> CUSTOM MEDIA QUERIES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Large and up */
+/* Large and up | 1024px and larger */
 @media screen and (min-width: 64em) {
     
     .column,
     .columns {
         padding-left: 2rem;
         }
+        
+     hr {
+        margin: 1.25rem auto 3rem auto;
+        }
+
+        
+/* 
+>>>>>>>>>>>>>> NAVIGATION STYLES <<<<<<<<<<<<<<< */
         
     .top-bar-right {
         margin-top: 1.563rem;
@@ -168,22 +171,23 @@ hr {
     .top-bar-left {
         margin-top: 1rem;
         }
+   
+        
+/* 
+>>>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<<< */
         
     .g-r {
         margin-bottom: 1rem;
         padding: 1.5rem 0;
         }
     
-    hr {
-        margin: 1.25rem auto 3rem auto;
-        }
-    
     .project-grid p {
         text-align: initial; 
         }
+    
         
 /* 
->>>> LINK STYLES <<<<< */
+>>>>>>>>>>>>>> LINK STYLES <<<<<<<<<<<<<<< */
     
     a {
         text-decoration: none;
@@ -214,17 +218,33 @@ hr {
         
     .sidebar.intro-list ul li {
         width: 75%;
-    }
+        }
      
     .sidebar.intro-list a {
         font-weight: bold;
         }
+     
+        
+/* 
+>>>>>>>>>>>>>> ABOUT PAGE STYLES <<<<<<<<<<<<<<< */
+        
+    .menu.large-horizontal li {
+        display: inline-block;
+        }
     
-    }
+    .sidebar.intro-list .i-l-h li {
+        width: 20%;
+        margin-right: 5%;
+        }
     
+   .sidebar.intro-list .menu li {
+        vertical-align: bottom;
+        }
     
+}
+
     
-/*/* Small only */
+/* Small only | 639px and below */
 @media screen and (max-width: 39.9375em) {
    
      .grid-block {
