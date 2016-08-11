@@ -4,6 +4,12 @@
 >>>>>>>>>>>>> TEXT STYLES <<<<<<<<<<<<<< */
 
 p,
+a,
+li {
+    font-size: 1rem;
+    }
+
+p,
 li,
 h1,
 h2,
@@ -34,7 +40,7 @@ li {
     font-size:0.938rem;
     font-weight: bold;
     margin-top: 0.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     }
     
  .subtype {
@@ -86,31 +92,37 @@ a:hover {
     
 .main-footer {
     background-color: #fffa00;
+    min-height: 137px;
+    }
+
+.sticky-footer-wrap {
+    min-height: calc(100vh - 137px);
     }
 
 
-
-
 /* 
->>>>>>>>>>>>> SITE INTRO STYLES <<<<<<<<<<<<<< */
+>>>>>>>>>>>>> SIDEBAR STYLES <<<<<<<<<<<<<< */
 
- .site-intro-list ul li {
+ .sidebar.intro-list ul li {
      margin-bottom: 2.5rem;
-     width: 75%;
      }
      
- .site-intro-list h5 {
+ .sidebar.intro-list h5 {
      margin-bottom: 1rem;
      }
      
- .site-intro-list h6 {
+ .sidebar.intro-list h6 {
      color: #333;
      font-weight: bold;
      }
      
- .site-intro-list ul li p:nth-child(3) {
+ .sidebar.intro-list ul li p:nth-child(3) {
      font-size: 0.906rem;
      }
+    
+    
+    
+    
     
 /* 
 >>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<< */
@@ -122,6 +134,8 @@ a:hover {
 .project-grid p {
      text-align: center;
      }
+     
+
 
 hr {
     max-width: 75rem;
@@ -133,7 +147,6 @@ hr {
     margin: 1.25rem auto;
     clear: both;
 }
-
 
 
 
@@ -165,10 +178,6 @@ hr {
         margin: 1.25rem auto 3rem auto;
         }
     
-    .subheader {
-        margin-bottom: 0.5rem;
-        }
-    
     .project-grid p {
         text-align: initial; 
         }
@@ -193,7 +202,7 @@ hr {
     .main-nav-links a:hover,
     .main-footer-links a:hover,
     .cta a:hover,
-    .site-intro-list a:hover {
+    .sidebar.intro-list a:hover {
         background-color: #ccffcc;
         color: #000;
         font-weight: bold;
@@ -203,7 +212,11 @@ hr {
         background-color: #ccffcc;
         }    
         
-    .site-intro-list a {
+    .sidebar.intro-list ul li {
+        width: 75%;
+    }
+     
+    .sidebar.intro-list a {
         font-weight: bold;
         }
     
@@ -211,9 +224,11 @@ hr {
     
     
     
-/*/* Small only 
+/*/* Small only */
 @media screen and (max-width: 39.9375em) {
    
-        
+     .grid-block {
+            margin-bottom: 2rem;  
+         }   
      
-    }*/
+    }
