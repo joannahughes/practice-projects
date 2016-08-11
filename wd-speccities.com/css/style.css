@@ -142,8 +142,26 @@ hr {
     margin: 1.25rem auto;
     clear: both;
     }
+    
+/* 
+>>>>>>>>>>>>>> OUR WORK: COLUMN LAYOUT <<<<<<<<<<<<<<< */
 
+.fl-c {
+    float: left;
+    width: 45%;
+    }
+    
+.p-r {
+    margin-right: 10%;
+    }
 
+/*.project-grid div {
+    border: 1px solid red;
+    }*/
+    
+    
+    
+    
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>> CUSTOM MEDIA QUERIES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -185,6 +203,9 @@ hr {
         text-align: initial; 
         }
     
+     .sidebar.intro-list ul li {
+        width: 75%;
+        }
         
 /* 
 >>>>>>>>>>>>>> LINK STYLES <<<<<<<<<<<<<<< */
@@ -215,10 +236,6 @@ hr {
     .grid-hover:hover {
         background-color: #ccffcc;
         }    
-        
-    .sidebar.intro-list ul li {
-        width: 75%;
-        }
      
     .sidebar.intro-list a {
         font-weight: bold;
@@ -240,6 +257,24 @@ hr {
    .sidebar.intro-list .menu li {
         vertical-align: bottom;
         }
+        
+/* 
+>>>>>>>>>>>>>> OUR WORK: COLUMN LAYOUT <<<<<<<<<<<<<<< */
+
+.fl-c {
+    width: 30%;
+    margin-bottom: 2rem;
+    }
+   
+.p-r {
+    margin-right: 0;
+    }
+ 
+.p-r-r {
+    
+    margin-right: 5%;
+    margin-left: 5%;
+    }
     
 }
 
