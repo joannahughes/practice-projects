@@ -87,8 +87,10 @@ li {
     margin-bottom: 1rem;
 }
 
-
-
+.thb-grd img {
+    width: 100px;
+    height: 100px;
+}
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>>  LINK STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -204,6 +206,7 @@ hr {
 .thb-grd .columns {
     margin-bottom: 1.5rem;
 }
+
      
 
 /* 
