@@ -260,12 +260,19 @@ hr {
         
 /* 
 >>>>>>>>>>>>>> OUR WORK: COLUMN LAYOUT <<<<<<<<<<<<<<< */
-
+ 
 .fl-c {
-    width: 30%;
     margin-bottom: 2rem;
     }
-   
+
+.fl-c .text-snippet,
+.fl-c .subheader {
+    width: 50%;
+}
+
+
+
+ /*  
 .p-r {
     margin-right: 0;
     }
@@ -274,9 +281,9 @@ hr {
     
     margin-right: 5%;
     margin-left: 5%;
-    }
+    } */
     
-}
+} 
 
     
 /* Small only | 639px and below */
