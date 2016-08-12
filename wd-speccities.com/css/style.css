@@ -19,7 +19,10 @@ h1,
 h5 {
     text-transform: uppercase;
     }
-   
+
+.a-title {
+    text-transform: none;
+}
     
 ul,
 ol,
@@ -41,6 +44,7 @@ li {
  .subtype a {
      color: #333;
      font-size:0.750rem;
+     font-weight: bold;
      }
     
 .text-snippet {
@@ -50,8 +54,20 @@ li {
     letter-spacing: normal;
     }
     
-
+.reference {
+    color: #000;
+    font-style: italic;
+}
   
+.block-quote {
+    font-family: serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+
+
+
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>>  LINK STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -64,9 +80,9 @@ a {
 a:hover {
     color: #000;
     }
-    
 
 
+ 
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>> NAV AND FOOTER STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -84,6 +100,14 @@ a:hover {
 .logo {
     width: 60%;
     }
+
+.sub-nav {
+    text-align: center;
+    margin: 0 0 2rem 0;
+    padding: 0.5rem 0;
+    background-color: #ccffcc;
+    font-size: 0.850rem;
+}
     
 .main-footer {
     background-color: #fffa00;
@@ -101,6 +125,10 @@ a:hover {
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>> SIDEBAR STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+.sidebar.intro-list {
+    margin-bottom: 3rem;
+}
+
  .sidebar.intro-list ul li {
      margin-bottom: 2.5rem;
      }
@@ -117,12 +145,12 @@ a:hover {
  .sidebar.intro-list ul li p:nth-child(3) {
      font-size: 0.906rem;
      }
-    
+   
     
     
        
 /* 
->>>>>>>>>>>>>>>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+>>>>>>>>>>>>>>>>>>>>>>>>>> GRID STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .project-grid {
     margin-bottom: 2rem;
@@ -132,6 +160,10 @@ a:hover {
      text-align: center;
      }
 
+.project-grid.c-2 p {
+    text-align: initial;
+}
+
 hr {
     max-width: 75rem;
     height: 0;
@@ -139,29 +171,18 @@ hr {
     border-top: 0;
     border-bottom: 1px solid #cacaca;
     border-left: 0;
-    margin: 1.25rem auto;
+    margin: 1.25rem auto 3rem auto;
     clear: both;
     }
-    
-/* 
->>>>>>>>>>>>>> OUR WORK: COLUMN LAYOUT <<<<<<<<<<<<<<< */
 
-.fl-c {
-    float: left;
-    width: 45%;
-    }
-    
-.p-r {
-    margin-right: 10%;
-    }
+ .thb-grd {
+    margin-bottom: 1.5rem;
+} 
 
-/*.project-grid div {
-    border: 1px solid red;
-    }*/
-    
-    
-    
-    
+.a-content {
+    margin-bottom: 2rem;
+}
+     
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>> CUSTOM MEDIA QUERIES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -172,10 +193,6 @@ hr {
     .column,
     .columns {
         padding-left: 2rem;
-        }
-        
-     hr {
-        margin: 1.25rem auto 3rem auto;
         }
 
         
@@ -189,7 +206,15 @@ hr {
     .top-bar-left {
         margin-top: 1rem;
         }
-   
+
+   .sub-nav {
+        text-align: right;
+        font-size: initial;
+        }
+
+    .sub-nav a {
+        padding: 0 0.5rem;
+        }
         
 /* 
 >>>>>>>>>>>>>> PROJECT GRID STYLES <<<<<<<<<<<<<<< */
@@ -202,10 +227,16 @@ hr {
     .project-grid p {
         text-align: initial; 
         }
+
+    .project-grid.c-2 .text-snippet,
+    .project-grid.c-2 .subheader {
+        width: 55%;
+        }
     
      .sidebar.intro-list ul li {
         width: 75%;
         }
+
         
 /* 
 >>>>>>>>>>>>>> LINK STYLES <<<<<<<<<<<<<<< */
@@ -235,12 +266,11 @@ hr {
     
     .grid-hover:hover {
         background-color: #ccffcc;
-        }    
-     
-    .sidebar.intro-list a {
+        }     
+
+    .sub-nav a:hover {
         font-weight: bold;
-        }
-     
+        }    
         
 /* 
 >>>>>>>>>>>>>> ABOUT PAGE STYLES <<<<<<<<<<<<<<< */
@@ -256,33 +286,24 @@ hr {
     
    .sidebar.intro-list .menu li {
         vertical-align: bottom;
-        }
-        
+        } 
+
 /* 
->>>>>>>>>>>>>> OUR WORK: COLUMN LAYOUT <<<<<<<<<<<<<<< */
- 
-.fl-c {
-    margin-bottom: 2rem;
+>>>>>>>>>>>>>> ARTICLE PAGE STYLES <<<<<<<<<<<<<<< */ 
+
+    .sidebar.intro-list .articles li {
+        margin-bottom: 0.75rem;
+        font-weight: bold;
+        }
+
+    .sidebar.intro-list .articles li a {
+        font-size: 0.750rem;
+        }
+
+    .a-title {
+        font-size:2rem;
+        margin-bottom: 1.25rem;
     }
-
-.fl-c .text-snippet,
-.fl-c .subheader {
-    width: 50%;
-}
-
-
-
- /*  
-.p-r {
-    margin-right: 0;
-    }
- 
-.p-r-r {
-    
-    margin-right: 5%;
-    margin-left: 5%;
-    } */
-    
 } 
 
     
