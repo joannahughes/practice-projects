@@ -29,6 +29,17 @@ li {
     padding: 0;
     margin: 0;
     }
+
+hr {
+    max-width: 75rem;
+    height: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+    margin: 1.25rem auto 2rem auto;
+    clear: both;
+    }
     
 .subheader {
     color: #000;
@@ -71,7 +82,11 @@ li {
     padding-right: 1.75rem;
 }
 
-
+.call-out {
+    background-color: #ccffcc;
+    padding: 1rem;
+    font-weight: bold;
+}
 
 
 /* 
@@ -91,6 +106,19 @@ li {
     width: 100px;
     height: 100px;
 }
+
+.a-head-img {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.a-head-img img {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+
+
 
 /* 
 >>>>>>>>>>>>>>>>>>>>>>>>>>  LINK STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -183,17 +211,6 @@ a:hover {
     text-align: initial;
 }
 
-hr {
-    max-width: 75rem;
-    height: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 1px solid #cacaca;
-    border-left: 0;
-    margin: 1.25rem auto 3rem auto;
-    clear: both;
-    }
-
  .thb-grd {
     margin-bottom: 1.5rem;
 } 
@@ -219,7 +236,9 @@ hr {
         padding-left: 2rem;
         }
 
-
+    hr {
+        margin: 1.25rem auto 3rem auto;
+    }
 
   
       

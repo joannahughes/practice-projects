@@ -1,0 +1,160 @@
+/* Reset */
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.nav a { text-decoration: none; }
+
+.nav li { list-style: none; }
+
+body {
+    background: #efefef;
+}
+
+/* Menu Container */
+header {
+    background: #372f2b;
+    width: 100%; 
+    margin-top: -10px;
+}
+
+#menu-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.nav {
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	z-index: 500;
+}
+
+/* Menu List */
+.nav > li {
+	display: block;
+	float: left;
+}
+
+/* Menu Links */
+.nav > li > a {
+	position: relative;
+    display: block;
+    z-index: 510;
+    height: inherit;
+    padding: 10px 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fcfcfc;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+    background: #372f2b;
+	border-left: 1px solid #4b4441;
+	border-right: 1px solid #312a27;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav > li:hover > a { 
+    background: #4b4441; 
+}
+
+.nav > li:first-child > a {
+	border-radius: 3px 0 0 3px;
+}
+
+.nav li:last-child .last {
+    border-right: 1px solid #4b4441;
+}
+
+/* Menu Dropdown */
+.nav > li > div {
+    background: #fff;
+	position: absolute;
+    display: block;
+    width: 100%;
+    top: 40px;
+	left: 0;
+
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	border-radius: 0 0 3px 3px;
+
+	-webkit-transition: all .3s ease .15s;
+	-moz-transition: all .3s ease .15s;
+	-o-transition: all .3s ease .15s;
+	-ms-transition: all .3s ease .15s;
+	transition: all .3s ease .15s;
+}
+
+.nav > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+
+/* Menu Content Styles */
+.nav .row-padding {
+    padding: 20px 0 40px;
+}
+
+.nav .row {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav-inner li div ul {
+    float:left;
+    text-align: left;
+}
+
+.nav-inner li {
+    display: block;
+}
+
+.nav-inner li div .outer-ul {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-inner li div ul .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.bg-image  {
+    background-image: url('../assets/bg-image.png');
+    max-width: 100%;
+    min-height: 225px;
+    background-size: cover;
+    background-position: center;
+    background-color: #efefef;
+    background-repeat: no-repeat;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+

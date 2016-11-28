@@ -1,0 +1,52 @@
+/* SCSS Document */
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.inner-container {
+  width: 60%;
+  float: left; }
+  .inner-container h1 {
+    color: #555;
+    font-family: Times New Roman, serif;
+    font-size: 3rem; }
+  .inner-container p {
+    color: p-color;
+    font-family: Arial, sans-serif;
+    font-size: 1.125rem; }
+  .inner-container img {
+    max-width: 100%;
+    border: 1px solid black; }
+  .inner-container .box.primary {
+    width: 50%;
+    float: left; }
+  .inner-container .box.secondary {
+    width: 50%;
+    float: right; }
+
+.side-bar {
+  width: 40%;
+  float: right; }
+
+.box h2 {
+  color: #555;
+  font-family: Times New Roman, serif;
+  font-size: 2rem; }
+.box p {
+  color: #999;
+  font-familY: Arial, sans-serif;
+  font-size: 0.75rem; }
+
+.main-nav ul {
+  list-style: none; }
+.main-nav li {
+  display: inline-block;
+  margin: 0;
+  padding-left: 0; }
+.main-nav a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: #333;
+  font-family: Arial, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

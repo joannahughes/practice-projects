@@ -1,0 +1,91 @@
+/* >>>>>>>>>>>>>>>>>>> RESET STYLES <<<<<<<<<<<<<<<<<< */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.nav,
+.nav a,
+.nav ul,
+.nav li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>> NAV STYLES <<<<<<<<<<<<<<<<<< */
+.nav {
+    display: inline-block;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav li {
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    z-index: 1010;
+    height: 50px;
+    padding: 0 40px;
+    transition: all 0.3 ease-in 0.2; 
+}
+
+.nav li .mega-content {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    background: #CCCACA;
+    transition: all .3s ease-in .2s; 
+}
+
+.nav li:hover .mega-content {
+    visibility: visible;
+    overflow: visible;
+    opacity: 1;
+}
+
+.nav .nav-column {
+    width: 22%;
+    float: left;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+
+
+
+
+
+
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}

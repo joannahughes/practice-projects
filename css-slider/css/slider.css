@@ -1,0 +1,184 @@
+/* Universal slider styles */
+
+/* 
+    this is so that the slider takes up the 
+    full height and width of the viewport 
+*/
+
+html,
+body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    in this example .wrap takes up the entire viewport
+    but height and width could be adjusted per design;
+    **
+    this div dictates the size of our slides and images
+    **
+    set overflow:hidden so that we can position slides 
+    off-screen with no horizontal scroll-bars
+*/
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    /* styles below purely decorative */
+    background: #120103;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+    by setting top: 0 and left: 100% we are
+    pushing all of our slides off to the side of the 
+    window 
+*/
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    
+    /*positioning for the background-image*/
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+    padding: 8rem 1rem 0;
+    
+    /* so that your current slide waits until the next one has come onto the screen */
+    transition: left 0s 0.75s;
+}
+
+.slide-1 {
+    background-image: url(../assets/slide-1.jpg);
+}
+
+.slide-2 {
+    background-image: url(../assets/slide-2.jpg);
+}
+
+.slide-3 {
+    background-image: url(../assets/slide-3.jpg);
+}
+
+.slide-4 {
+    background-image: url(../assets/slide-4.jpg);
+}
+
+/*
+    attribute selectors;
+    these will show the correct slide when 
+    the correct radio element checked
+*/
+
+/* 
+    this selector selects any id with the word slide;
+    we add the pseudo element :checked so that it applies
+    the styles only when the correct radio button is checked;
+    we use the "+" to select the adjacent sibling .slide;
+*/
+
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    
+    /*this applies the sliding effect on your slides */
+    transition: left 0.65s ease-out;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Styles for slider-1 (index) */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    
+    /* styles below purely decorative */
+    background: #3E474F;
+    box-shadow: 0 .5rem 1rem #111;
+}
+
+/* purely decorative styles for the labels */
+
+header label {
+    display: inline-block;
+    line-height: 4.25rem;
+    cursor: pointer;
+    color: #788188;
+    font-size: .667rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Styles for slider-2.html */
+.slide-arrows label {
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    font-size: 5rem;
+}
+
+.slide-arrows .next {
+    right: 8%
+}
+
+.slide-arrows .previous {
+    left: 5%;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Styles for slider-3.html */
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0 0;
+}
+
+.wrap {
+    height: 30%;
+    width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 4%;
+}
+
+.slide {
+    padding: 4% 0 0;
+}
+
+.slide section {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 7%;
+}
+
+.slide-arrows .next {
+    right: 5%;
+}
+
+
+
+
+
+
+

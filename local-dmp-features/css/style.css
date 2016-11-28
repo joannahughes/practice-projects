@@ -1,0 +1,36 @@
+
+.spline {
+    padding: 3rem 0;
+    margin: 1rem 0;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+.slide-wrapper {
+    background-color: #fff;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    visibility: hidden;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+[id^="slide"]:checked + .slide {
+    z-index: 100;
+    visibility: visible;
+}
+
+.button label {
+    cursor: pointer;
+}
+
+
